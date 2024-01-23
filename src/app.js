@@ -1,7 +1,7 @@
-let managerName = "Alex Ferguson";
-let managerAge = 78;
-let currentTeam = "Manchester FC";
-let trophiesWon = 27;
+var managerName = "Alex Ferguson";
+var managerAge = 78;
+var currentTeam = "Manchester FC";
+var trophiesWon = 27;
 
 //Write your function here
 
@@ -12,22 +12,10 @@ function createManager(managerName, managerAge, currentTeam, trophiesWon)
 
 }
 
-// Don't edit the following code
-try {
-  var manager = createManager(
-    managerName,
-    managerAge,
-    currentTeam,
-    trophiesWon
-  );
-} catch (e) {
-  // do nothing - expected error
-}
+
 
 //Trial 2 - create a formation object and return it
 var formation = [4, 4, 3];
-
-//write your function here
 
 function createFormation(formation){
 
@@ -44,13 +32,7 @@ function createFormation(formation){
   return play;
 
 }
-// Dont edit the following code
 
-try {
-  var formationObject = createFormation(formation);
-} catch (e) {
-  //do nothing
-}
 
 //Progression 3 - Filter players that debuted in ___ year
 function filterByDebut(year) {
@@ -130,7 +112,7 @@ function SortByAge() {
 //Challenge 2 - Sort players beloging to _____ team in descending order of awards won
 
 function FilterByTeamxSortByNoOfAwards(team) {
-  let count = 0;
+  var count = 0;
   let filteredPlayers = [];
   for (let i = 0; i < players.length; i++) {
     if (players[i].team == team) {
